@@ -24,15 +24,18 @@ body
 }
 
 .logo img
-{
-	width: 160px;
-	height: 110px;
+{  
+    width: 100px;
+	height: 50px;
+}
+.logo
+{    
+	position: relative;
+	top: 50px;
 }
 .bouton-rechercher
 {
-	height: 24px;
-	right:5px;
-	bottom: 5px;
+	height: 29px;
 	background-color: #0065FC;
 	border: 1px solid;
 	border-radius: 5px;
@@ -40,8 +43,9 @@ body
 	padding: 3px 8px 0px 8px;
 	color: white;
 	text-decoration: none;
-    margin-left:-0.5%;
-    margin-top: 0.6%; 
+	margin-top: 1%;
+	margin-left:-1%;
+	
 }	
 
 .rechercher
@@ -58,25 +62,48 @@ nav li
 {
 margin-right: 15px;
 }
+
 nav a
 {
 	font-size: 1.3em;
 	padding-bottom: 3px;
 	text-decoration: none;
+	color:  #0065FC;
 }
+
 .nav
 {
 	display: flex;
-	justify-content: flex-end;
-	color: #DEEBFF;
+	position: absolute;
+    top: 50px;
+    right: 550px;
+}   
+
+input
+{
+	height: 30px;
+	width: 250px;
+}
+.filtres
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.populaires-titre
+{
+	position: absolute;
+	top: 500px;
+	margin-left: 1140px;
+
 }
 
 .combinaison
 {
 	display: flex;
 	margin: auto;
-
 }
+
 .Hébergements
 {
 	display: flex;
@@ -85,15 +112,15 @@ nav a
 	flex-wrap: wrap;
 	border-radius:10px; 
 	justify-content: space-around;
-	align-items: flex-end;
+	max-width: 1000px;
+	
 }
 
 .Hébergements img
 {
 	border-radius: 10px;
-	height: 230px;
-	padding: 1px;
-	width: 350px;
+	height: 150px;
+	width: 250px;
 }
 
 figure
@@ -117,6 +144,7 @@ margin-left: 5%;
 h1
 {
 	margin: auto;
+	font-family: 'Raleway-ExtraBold';
 }
 
 figcaption
@@ -127,13 +155,27 @@ figcaption
 .Activités
 {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .Activités img
 {
 	border-radius: 10px;
 }
+
+.deux-en-un img
+{
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	width: 300px;
+}
+
+.solo
+{
+	overflow: hidden;
+
+}
+
 footer
 {
 	display: flex;
@@ -141,3 +183,13 @@ footer
 	background-color: #F2F2F2;
 	border-radius: 10px;
 }
+
+@media screen (max-width: 768px)
+{
+.bloc-page
+{
+	display: flex;
+	flex-direction: column;
+}
+}
+ 
