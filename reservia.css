@@ -1,21 +1,10 @@
-@font-face
-{
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-Black.ttf');
-    src: url('fonts/Raleway-Bold.ttf');
-    src: url('fonts/Raleway-ExtraBold.ttf');
-    src: url('fonts/Raleway-Medium.ttf');
-    src: url('fonts/Raleway-Regular.ttf');
-    src: url('fonts/Raleway-SemiBold.ttf');
-    
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 body
 {
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
+
 .bloc-page
 {
   width: 1440px;
@@ -25,29 +14,34 @@ body
 .logo img
 { 
   width: 100px;
-	height: 50px;
+  height: 50px;
 }
 
 .logo
 {
-	position: relative;
-	top: 60px;
+  position: relative;
+  top: 60px;
 }
     
 .rechercher
 {
-	display: flex;
-	justify-content: flex-start;
-
+  display: flex;
 }
 
-.rechercher img
+.rechercher span
 {    
-	position: relative;
-	height: 20px;
-	width: 20px;
 	background-color: #F2F2F2;
-}	
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}    
+
+.fa-map-marker-alt
+{
+	position: relative;
+	width: 30px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
 
 button
 {
@@ -59,13 +53,15 @@ button
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%; 
   cursor: pointer;
- }
+  margin-left: -10px;
+  height: 48px;
+}
 
 input
 {
-	height: 39px;
-	width: 240px;
-	margin-right: -10px;
+	height: 43px;
+	width: 220px;
+	border-style: none;
 }
 
 nav ul
@@ -82,7 +78,6 @@ margin-right: 15px;
 
 nav a
 {
-	
 	padding-bottom: 3px;
 	text-decoration: none;
 	color: #0065FC;
@@ -99,11 +94,11 @@ nav a
     font-size: 1.2em;
 }   
 
+
 .en-tête
 {
   margin-top: 50px;
 }
-
 
 .filtres
 {
@@ -113,69 +108,57 @@ nav a
 	font-size: 0.8em;
 }
 
-.filtres img
+.filtres span:hover
 {
-
-  height:25px;
-  width: 25px;   
-  margin-right: 10px;
+  animation: animate 1s infinite;
 }
 
-.economie
+@keyframes animate
+{
+  0%
+  {
+  	transform: translateY(0px);
+  }
+  50%
+  {
+  	transform: translateY(-30px);
+  }
+  100%
+  {
+  	transform: translateY(0px);
+  }
+}
+
+
+span h2:nth-child(1)
+{
+	animation-delay: .1s;
+}
+
+.icones-fond
+{
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  color: #0065FC;
+  padding:20px;
+}
+
+.icones
 {   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-	border:solid 2px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-color:  #F2F2F2;
-	margin-left: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+  border: solid 2px #d9d9d9 ;
+  border-radius: 60px;
+  padding-right:10px;
 }
 
-.famille
-{   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-	border:solid 2px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-color:  #F2F2F2;
-	margin-left: 60px;
+.icones span
+{
+  margin-left:10px;
 }
 
-.coeur
-{   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-	border:solid 2px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-color:  #F2F2F2;
-	margin-left: 60px;
-}
-
-.animaux
-{   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-	border:solid 2px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-color:  #F2F2F2;
-	margin-left: 60px;
-}
 
 .info
 {   
@@ -191,12 +174,18 @@ nav a
  	border:solid 2px;
 	border-radius: 50%;
 	border-color:  #F2F2F2;
- 	
+	padding: 5px;
 }
+
 
 .combinaison
 {
 	display: flex;
+}
+
+.Hébergements-images div, .populaires-images div
+{
+   box-shadow: 3px 6px 15px #d9d9d9;
 }
 
 .Hébergements-titre
@@ -228,26 +217,70 @@ nav a
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 13px;
+}
+
+h3
+{
+	font-size: 17px;
 }	
+
+.Hébergements-images div
+{
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.mer, .panier, .amina
+{
+	margin-top: 40px;
+} 
 
 figure
 {
 	background-color: white;
 	border-radius: 10px;
+}
+
+figure:hover, .Hébergements-images div:hover, .populaires-images div:hover, .icones:hover
+{
+	transform: scale(1.05);
 }	
+
+.icones-fond:hover
+{
+background: linear-gradient(70deg, #33669c, #56a8ff);
+color: white;
+}
+.afficher
+{
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.fa-star
+{
+	color:#0065FC;
+}
+
+.unchecked
+{
+    color: #F2F2F2;
+}
 
 .populaires-zone
 {
-background-color: #F2F2F2;
-font-size: 15px;
-border-radius: 20px;
-width: 600px;
+    background-color: #F2F2F2;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 800px;
 }
 
 .populaires-zone img
 {
-	height: 90px;
-	width: 90px;
+	height: 110px;
+	width: 110px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	float: left;
@@ -258,38 +291,47 @@ width: 600px;
 {
 	display: flex;
 	justify-content: flex-start;
+	margin-left: 40px;
+	margin-top: 20px;
 }
 
 .populaires-titre img
 {
-
-  height: 25px;
-
+    height: 25px;
+    margin-left: 40px; 
+    margin-top: 10px;
 }
 
 #Hébergements
 {
-	margin-top: 20px;
+    margin-top: 30px;
 	margin-left: 40px;
+}
+
+.populaires-images div
+{
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  height: 120px;
+  margin-left:50px;
+}
+
+.Chambres-d-hôtes,.Bleu-Blanc
+{
+	margin-top: 80px;
 }
 
 h1,h2
 {
-	font-family: 'Raleway-ExtraBold';
-	font-size: 1.5em;
+    font-size: 1.5em;
 }	
-
-figcaption
-{
-	text-align: center;
-	height: 90px;
-}
-
 
 #Activités
 {
 	margin-top: 90px;
 }
+
 .Activités-zone
 {
 	display: flex;
@@ -299,8 +341,8 @@ figcaption
 .Activités-zone img
 {
 	border-radius: 10px;
-
 }
+
 
 .deux-en-un img
 {
@@ -317,7 +359,7 @@ figcaption
 
 .solo img
 {   
-	height: 380px;
+	height: 355px;
 	width: 290px;
 }
 
@@ -332,12 +374,24 @@ footer
 }
 
 
-@media screen and (max-width: 768px)
+@media screen (max-width:480px)
 {
+
 .bloc-page
+{   max-width: 480px; 
+	display: none;
+	margin: 0;
+	padding: 0;
+}	
+.combinaison
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
+
+.populaires-zone img
+  {
+    float: none;
+   }
 }
- 
+

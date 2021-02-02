@@ -2,7 +2,9 @@
 <html lang="fr">
         <head>
            <meta charset="UTF-8" />
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">          
            <link rel="stylesheet" href="reservia.css"/>
+
            <title>Reservia </title>
         </head>
         <body>
@@ -19,52 +21,68 @@
 <div class="nav">
 
 <nav>
-    	<ul>
-    	
-    	<li><a href="#Hébergements">Hébergements</a></li>
-    	<li><a href="#Activités">Activités</a></li>
-    	<li>S'inscrire</li>
-    	
-    	</ul>
+        <ul>
+        
+        <li><a href="#Hébergements">Hébergements</a></li>
+        <li><a href="#Activités">Activités</a></li>
+        <li>S'inscrire</li>
+        
+        </ul>
     
     </nav>
     </div>
     
 <div class="en-tête">
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature.</p>
+    <p>En plein centre ville ou en pleine nature</p>
 
 <div class="rechercher">   
     
+    <span><i class="fas fa-map-marker-alt"></i></span>
     <form method="post">
-    <img src="Icones/map-marker-alt-solid.svg" alt="position">
     <input type="search" placeholder="Nom de la ville">
     <button type="submit">Rechercher</button>
      
     </form>
-
+    
     </div>
     </div>
 
 <div class="filtres">
 
-     <h1>Filtres</h1>
+     <h2>Filtres</h2>
      
-     <div class="economie"><img src="Icones/money-bill-wave-solid.png" alt="Économique">
-     <h1>Économique</h1>
+     <div class="icones">
+
+     <div class="icones-fond">
+     <i class="fas fa-money-bill-wave fa-2x"></i>
+     </div>
+     <span><h2>Économique</h2></span>
      </div>
      
-     <div class="famille"><img src="Icones/child-solid.png" alt="Familial"> 
-     <h1>Familial</h1>
+     <div class="icones">
+     
+     <div class="icones-fond">
+     <i class="fas fa-child fa-2x"></i>
+     </div>
+     <span><h2>Familial</h2></span>
      </div> 
      
-     <div class="coeur"><img src="Icones/heart-solid.png" alt="Romantique">
-     <h1>Romantique</h1>
+     <div class="icones">
+     
+     <div class="icones-fond">
+     <i class="fas fa-heart fa-2x"></i>
+     </div>
+     <span><h2>Romantique</h2></span>
      </div>
 
-         
-     <div class="animaux"><img src="Icones/dog-solid.png" alt="Animaux autorisés">
-     <h1>Animaux autorisés</h1>
+     <div class="icones">
+     
+     <div class="icones-fond">
+     <i class="fas fa-dog fa-2x"></i>
+     </div>
+     
+     <span><h2>Animaux autorisés</h2></span>
      </div>   
 
     </div>
@@ -85,67 +103,102 @@
 <div class="combinaison">
 <div class="Hébergements-zone">
 
-<div class="Hébergements-titre">
+ <div class="Hébergements-titre">
     <h1 id="Hébergements">Hébergements à Marseille</h1>
-    </div>  
+ </div>  
 
-   <div class="Hébergements-images">     
-        <figure>
+   <div class="Hébergements-images">  
+
+        <div class="cannebière">  
             
         <img src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
-        <figcaption><h2>Auberge de la Cannebière</h2> 
+        <h3>Auberge de la Cannebière</h3> 
         <p>Nuit à Partir de 25€</p>
-
-        </figcaption>    
-        </figure>
-
-        <figure>
+        
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
+         
+        </div>
+         
+        <div class="port">
             
         <img src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-        <figcaption><h2>Hôtel du port</h2> 
+        <h3>Hôtel du port</h3> 
         <p>Nuit à Partir de 52€</p>
 
-        </figcaption>
-        </figure>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
 
-        <figure>
+        </div>
+
+        <div class="mouettes">
             
         <img src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
-        <figcaption><h2>Hôtel Les mouettes</h2> 
+        <h3>Hôtel Les mouettes</h3> 
         <p>Nuit à Partir de 75€</p>
+        
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
 
-        </figcaption>
-        </figure>
+        </div>
 
-        <figure>
+        <div class="mer">
             
         <img src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
-        <figcaption><h2>Hôtel de la mer</h2> 
+        <h3>Hôtel de la mer</h3> 
         <p>Nuit à Partir de 46€</p>
+         
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
+        <span><i class="fas fa-star unchecked"></i></span>
 
-        </figcaption>
-        </figure>
+        </div>
 
-        <figure>
+        <div class="panier">
             
         <img src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-        <figcaption><h2>Auberge Le Panier</h2> 
+        <h3>Auberge Le Panier</h3> 
         <p>Nuit à Partir de 23€</p>
-
-        </figcaption>
-        </figure>
         
-        <figure>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
+
+        </div>
+        
+        <div class="amina">
             
         <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
-        <figcaption><h1>Hôtel chez Amina</h1> 
+        <h3>Hôtel chez Amina</h3> 
         <p>Nuit à Partir de 96€</p>
 
-        </figcaption>
-        </figure>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
 
         </div>
-        </div>
+
+    </div>
+
+      <div class="afficher">
+      <h4>Afficher plus</h4>
+      </div>  
+</div>
         
     
 <div class="populaires-zone">
@@ -154,45 +207,55 @@
     <h1>Les plus populaires</h1>
     <img src="Icones/chart-line-solid.svg" alt="chart">
     </div>    
-        
+
+<div class="populaires-images">
+
     <div class="soleil-du-matin">   
          
-        <figure> 
         <img src="Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
          
-        <figcaption> 
         <h3>Hôtel Le soleil du matin</h3> 
         <p>Nuit à Partir de 128€</p>
-        </figcaption>
-        </figure>
+
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
 
     </div>       
        
     <div class="Chambres-d-hôtes">
         
-        <figure>
         <img src="Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
 
-        <figcaption>
         <h3>Au coeur de l'eau Chambres d'hôtes</h3> 
         <p>Nuit à Partir de 71€</p>
-        </figcaption>
-        </figure>
+
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
 
     </div>  
       
     <div class="Bleu-Blanc">  
 
-        <figure>
         <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
 
-        <figcaption>
         <h3>Hôtel Tout bleu et Blanc</h3> 
         <p>Nuit à Partir de 68€</p>
-        </figcaption>
-        </figure> 
+
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star"></i> </span>
+        <span><i class="fas fa-star unchecked"></i></span>
+
     </div> 
-        
+         
+        </div>         
         </div>
         </div>
 
@@ -203,24 +266,24 @@
         <div class="solo">
         <figure>
 
-        <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">	
+        <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"> 
         <figcaption><h3>Vieux Port</h3></figcaption>
-        </figure>	
+        </figure>   
         </div>
 
         <div class="deux-en-un">
         <figure>
 
-        <img src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">	
+        <img src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">  
 
         <figcaption><h3>Fort de Pomègues</h3></figcaption>
-        </figure>	
+        </figure>   
 
         <figure>
         
         <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Friout">
 
-        <figcaption><h3>Île du Friout</h3></figcaption>	
+        <figcaption><h3>Île du Friout</h3></figcaption> 
         </figure>
         </div>
 
@@ -235,15 +298,15 @@
 
         <div class="deux-en-un">
         <figure>
-        	
-        <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">	
+            
+        <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">   
 
         <figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
         </figure>
 
         <figure>
-        	
-        <img src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">	
+            
+        <img src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"> 
 
         <figcaption><h3>Parc Longchamp</h3></figcaption>
         </figure>
@@ -258,9 +321,9 @@
     <h1>A propos</h1>
 
     <p>Fonctionnement du site</p>
-    <p>Conditions générerales de vente</p>	
+    <p>Conditions générerales de vente</p>  
     <p>Données et confidentialité</p>
-    </div>   	
+    </div>      
     
     <div class="Nos-hébergements">
 
@@ -273,7 +336,7 @@
     <h1>Assistance</h1>
     <p>Centre d'aide</p>
     <p>Nous contacter</p> 
-    </div> 	
+    </div>  
 
 </footer>
 
