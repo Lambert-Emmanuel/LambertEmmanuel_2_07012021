@@ -21,6 +21,7 @@ body
 {
   position: relative;
   top: 60px;
+  width: 30%;
 }
     
 .rechercher
@@ -80,7 +81,15 @@ nav a
 {
 	padding-bottom: 3px;
 	text-decoration: none;
-	color: #0065FC;
+	
+}
+
+.barre
+{
+	height: 2px;
+	width: 170px;
+	background-color: #0065FC;
+	margin-left: 20px;
 }
 
 .nav
@@ -90,9 +99,20 @@ nav a
 	align-items: flex-start;
     top: 50px;
     right: 550px;
-    color: #0065FC;
     font-size: 1.2em;
 }   
+
+.liens
+{
+	display: flex;
+}
+
+.inscrire
+{
+  font-weight: bold;
+  color: #0065FC;
+
+}
 
 
 .en-tête
@@ -167,14 +187,15 @@ span h2:nth-child(1)
 	margin-top: 20px;
 }
 
-.info img
+.fa-info
 {   
- 	height: 15px;
+	margin-top: 5px;
  	margin-right: 20px;
+ 	color: #0065FC;
  	border:solid 2px;
 	border-radius: 50%;
 	border-color:  #F2F2F2;
-	padding: 5px;
+	padding: 10px;
 }
 
 
@@ -183,7 +204,7 @@ span h2:nth-child(1)
 	display: flex;
 }
 
-.Hébergements-images div, .populaires-images div
+.Hébergements-images a, .populaires-images a
 {
    box-shadow: 3px 6px 15px #d9d9d9;
 }
@@ -222,14 +243,18 @@ span h2:nth-child(1)
 h3
 {
 	font-size: 17px;
+	color: black;
 }	
 
-.Hébergements-images div
+
+.Hébergements-images a
 {
   background-color: white;
   border-radius: 10px;
   padding: 5px;
   margin-left: 40px;
+  text-decoration: none;
+  display: block;
 }
 
 .mer, .panier, .amina
@@ -237,13 +262,18 @@ h3
 	margin-top: 40px;
 } 
 
-figure
+.lieux
 {
 	background-color: white;
 	border-radius: 10px;
 }
 
-figure:hover, .Hébergements-images div:hover, .populaires-images div:hover, .icones:hover
+.lieux h3
+{
+	margin-left: 10px; 
+}
+
+.lieux:hover, .Hébergements-images a:hover, .populaires-images a:hover, .icones:hover
 {
 	transform: scale(1.05);
 }	
@@ -295,9 +325,9 @@ color: white;
 	margin-top: 20px;
 }
 
-.populaires-titre img
+.fa-chart-line
 {
-    height: 25px;
+    
     margin-left: 40px; 
     margin-top: 10px;
 }
@@ -308,13 +338,15 @@ color: white;
 	margin-left: 40px;
 }
 
-.populaires-images div
+.populaires-images a
 {
   background-color: white;
   border-radius: 10px;
   width: 350px;
   height: 120px;
   margin-left:50px;
+  text-decoration: none;
+  display: block;
 }
 
 .Chambres-d-hôtes,.Bleu-Blanc
@@ -336,6 +368,13 @@ h1,h2
 {
 	display: flex;
 	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.Activités-zone a
+{
+	text-decoration: none;
+	display: block;
 }
 
 .Activités-zone img
@@ -345,13 +384,22 @@ h1,h2
 
 
 .deux-en-un img
-{
+{    
+	object-fit: cover;
 	display: flex;
 	flex-direction: column;
-	height: 150px;
-	width: 270px;
+    
+	height: 100%;
+	width: 100%;
+	
+	max-height: 150px;
+	max-width: 270px;
 }
 
+.premier
+{
+	margin-bottom: 65px;
+}
 .solo 
 {
 	overflow: hidden;
@@ -359,8 +407,12 @@ h1,h2
 
 .solo img
 {   
-	height: 355px;
-	width: 290px;
+	object-fit: cover;
+	height: 400px;
+    width: 100%;
+
+    max-height: 400px;
+    max-width: 290px;
 }
 
 footer
@@ -374,24 +426,173 @@ footer
 }
 
 
-@media screen (max-width:480px)
+@media screen and (max-width:640px)
 {
 
 .bloc-page
-{   max-width: 480px; 
-	display: none;
-	margin: 0;
-	padding: 0;
-}	
+{   
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+}  
+
+.en-tête
+{
+	margin:0px;
+}
+
+.inscrire
+{
+  margin-right: 50px;
+}
+
+.en-tête h1
+{
+	width: 85%;
+}
+
+.barre
+{   
+	position: absolute;
+	margin-top: 100px;
+	width: 270px;
+	margin-left: -30px;
+}
+
+.barre-2
+{   
+	position: absolute;
+	margin-top: 81px;
+    background-color: #F2F2F2;
+    width: 330px;
+    height: 2px;
+    margin-left: 200px;
+}
+
+.liens
+{	
+	margin-top: 50px;
+	margin-right: 50px;
+}
+
+.liens-2
+{
+	margin-top: 50px;
+	margin-right: 100px;
+}
+
+.money, .famille, .coeur, .chien 
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
 .combinaison
 {
 	display: flex;
 	flex-direction: column-reverse;
 }
 
-.populaires-zone img
-  {
-    float: none;
-   }
+.Hébergements-zone
+{
+    background-color: white;
+}
+
+.Hébergements-images
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Hébergements-images img
+{
+	object-fit: cover;
+	
+	max-width: 350px;
+	max-height:150px;
+	
+	height: 100%;
+	width: 100%; 
+}
+
+.Hébergements-images a
+{
+	width: 360px;
+}
+
+.Chambres-d-hôtes,.Bleu-Blanc
+{
+	margin: 0;
+}
+
+.populaires-zone
+{
+  width: 500px;
+  height: 550px;
+}
+
+.filtres
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.famille, .coeur, .chien
+{
+    margin-top: 10px;
+}
+
+.famille
+{
+	margin-top: -70px;
+	margin-left: 170px; 
+}
+
+.money, .coeur, .chien
+{
+	position: relative;
+    margin-left: -50px;
+}
+
+.mouettes,.port
+{
+	margin-top: 40px;
+}
+
+.Activités-zone
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.Activités-zone img
+{
+    max-width: 350px;
+	max-height:150px;
+	height: 100%;
+	width: 100%; 
+}
+
+.premier
+{
+	margin-bottom: 0;
+}
+
+.deux-en-un, .solo
+{
+	margin-top: 10px;
+}
+
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 440px;
+}
+
+
 }
 
