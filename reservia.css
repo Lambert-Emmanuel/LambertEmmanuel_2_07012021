@@ -6,11 +6,11 @@ body
 }
 
 .bloc-page
-{
-  width: 1440px;
+{ 
+  max-width: 1440px;
   margin: auto;
 }
-
+/* Taille et position du logo */
 .logo img
 { 
   width: 100px;
@@ -23,7 +23,9 @@ body
   top: 60px;
   width: 30%;
 }
-    
+/* Taille et position du logo */
+
+/*Zone de recherche */    
 .rechercher
 {
   display: flex;
@@ -64,7 +66,10 @@ input
 	width: 220px;
 	border-style: none;
 }
+/*Zone de recherche */
 
+
+/*Barre de navigation */ 
 nav ul
 {
 	list-style-type:none;
@@ -98,7 +103,6 @@ nav a
 	justify-content: flex-end;
 	align-items: flex-start;
     top: 50px;
-    right: 550px;
     font-size: 1.2em;
 }   
 
@@ -111,15 +115,17 @@ nav a
 {
   font-weight: bold;
   color: #0065FC;
-
 }
+/*Barre de navigation */ 
 
 
-.en-tête
+.en-tête /*Texte au dessus de la zone de recherche */
 {
-  margin-top: 50px;
+  margin-top: 50px; 
 }
 
+
+/*Position,animation des filtres */
 .filtres
 {
 	display: flex;
@@ -128,7 +134,7 @@ nav a
 	font-size: 0.8em;
 }
 
-.filtres span:hover
+.filtres h2:hover
 {
   animation: animate 1s infinite;
 }
@@ -150,9 +156,15 @@ nav a
 }
 
 
-span h2:nth-child(1)
+h2 span:nth-child(1)
 {
 	animation-delay: .1s;
+}
+
+.icones-fond:hover
+{
+background: linear-gradient(70deg, #33669c, #56a8ff);
+color: white;
 }
 
 .icones-fond
@@ -178,6 +190,7 @@ span h2:nth-child(1)
 {
   margin-left:10px;
 }
+/*Position,animation des filtres */
 
 
 .info
@@ -198,7 +211,7 @@ span h2:nth-child(1)
 	padding: 10px;
 }
 
-
+/*Contenue de la zone principale d'affichage de lieux d'hébergements */
 .combinaison
 {
 	display: flex;
@@ -207,6 +220,11 @@ span h2:nth-child(1)
 .Hébergements-images a, .populaires-images a
 {
    box-shadow: 3px 6px 15px #d9d9d9;
+}
+
+.combinaison p
+{
+	color: black;
 }
 
 .Hébergements-titre
@@ -257,32 +275,11 @@ h3
   display: block;
 }
 
-.mer, .panier, .amina
+.mer,.panier, .amina
 {
 	margin-top: 40px;
 } 
 
-.lieux
-{
-	background-color: white;
-	border-radius: 10px;
-}
-
-.lieux h3
-{
-	margin-left: 10px; 
-}
-
-.lieux:hover, .Hébergements-images a:hover, .populaires-images a:hover, .icones:hover
-{
-	transform: scale(1.05);
-}	
-
-.icones-fond:hover
-{
-background: linear-gradient(70deg, #33669c, #56a8ff);
-color: white;
-}
 .afficher
 {
   margin-top: 40px;
@@ -358,6 +355,9 @@ h1,h2
 {
     font-size: 1.5em;
 }	
+/*Contenu de la zone principale d'affichage de lieux d'hébergements */
+
+/*Contenu de la zone d'activités */
 
 #Activités
 {
@@ -382,7 +382,6 @@ h1,h2
 	border-radius: 10px;
 }
 
-
 .deux-en-un img
 {    
 	object-fit: cover;
@@ -398,8 +397,9 @@ h1,h2
 
 .premier
 {
-	margin-bottom: 65px;
+	margin-bottom: 49px;
 }
+
 .solo 
 {
 	overflow: hidden;
@@ -415,6 +415,30 @@ h1,h2
     max-width: 290px;
 }
 
+.lieux
+{
+	background-color: white;
+	border-radius: 10px;
+}
+
+.lieux h3
+{
+	margin-left: 10px; 
+	height: 40px;
+}
+
+.lieux:hover, .Hébergements-images a:hover, .populaires-images a:hover, .icones:hover
+{
+	transform: scale(1.05);
+}	
+
+.lieux
+{
+   box-shadow: 3px 6px 15px #d9d9d9;
+}
+
+/*Contenu de la zone d'activités */
+
 footer
 {
 	display: flex;
@@ -426,7 +450,7 @@ footer
 }
 
 
-@media screen and (max-width:640px)
+@media screen and (max-width:640px) /*Affichage sur smartphone */
 {
 
 .bloc-page
@@ -434,6 +458,8 @@ footer
 	display: flex;
 	flex-direction: column;
 	width: 600px;
+	margin: 0px;
+	padding: 0px;
 }  
 
 .en-tête
@@ -441,14 +467,10 @@ footer
 	margin:0px;
 }
 
-.inscrire
-{
-  margin-right: 50px;
-}
 
 .en-tête h1
 {
-	width: 85%;
+	width: 90%;
 }
 
 .barre
@@ -462,29 +484,29 @@ footer
 .barre-2
 {   
 	position: absolute;
-	margin-top: 81px;
+	margin-top: 100px;
     background-color: #F2F2F2;
     width: 330px;
     height: 2px;
-    margin-left: 200px;
+    margin-left: 240px;
 }
 
 .liens
 {	
 	margin-top: 50px;
-	margin-right: 50px;
+	margin-right: 99px;
 }
 
-.liens-2
-{
-	margin-top: 50px;
-	margin-right: 100px;
-}
 
 .money, .famille, .coeur, .chien 
 {
 	display: flex;
 	justify-content: flex-start;
+}
+
+.money
+{
+	width: 20%;
 }
 
 .combinaison
@@ -527,8 +549,13 @@ footer
 
 .populaires-zone
 {
-  width: 500px;
+  width: 580px;
   height: 550px;
+}
+
+.populaires-images a
+{
+	width: 450px;
 }
 
 .filtres
@@ -568,8 +595,8 @@ footer
 
 .Activités-zone img
 {
-    max-width: 350px;
-	max-height:150px;
+    max-width: 400px;
+	max-height:170px;
 	height: 100%;
 	width: 100%; 
 }
@@ -590,7 +617,7 @@ footer
     display: flex;
     flex-direction: column;
     padding: 30px;
-    width: 440px;
+    width: 520px;
 }
 
 

@@ -6,11 +6,13 @@
            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">          
            <link rel="stylesheet" href="reservia.css"/>
 
-           <title>Reservia </title>
+           <title> Reservia </title>
         </head>
         <body>
 
 <div class="bloc-page">
+
+<!-- HEADER -->    
 <header>
 
 <div class="logo">
@@ -21,37 +23,38 @@
     
 <div class="nav">
 
+<!--Nav -->
 <nav>
         <div class="barre"></div>
-        <ul>
-        <span class="liens">
-        <li ><a href="#Hébergements" style="color: #0065FC;">Hébergements</a></li>
-        </span>
-
-        <span class="liens-2">
-        <li><a href="#Activités" style="color: black;">Activités</a></li>
-        </span>
         <div class="barre-2"></div>
-        <span class="inscrire">
-        <li>S'inscrire</li>
-        </span>
+
+        <ul>
+       
+        <li ><span class="liens"><a href="#Hébergements" style="color: #0065FC;">Hébergements</a></span></li>
+       
+        <li><span class="liens"><a href="#Activités" style="color: black;">Activités</a></span></li>
+          
+        <li><span class="inscrire">S'inscrire</span></li>
         
         </ul>
     
     </nav>
+  <!-- NAV -->  
     </div>
     
 <div class="en-tête">
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
 
+
+<!-- Barre de recherche -->
 <div class="rechercher">   
     
     <span><i class="fas fa-map-marker-alt"></i></span>
     <form method="post">
     <input type="search" placeholder="Nom de la ville">
     <button type="submit">Rechercher</button>
-     
+<!-- Barre de recherche -->     
     </form>
     
     </div>
@@ -63,12 +66,12 @@
      
 
      <div class="money">
-     <div class="icones">
+     <div class="icones"> 
 
-     <div class="icones-fond">
+     <div class="icones-fond"> <!-- div pour créer les fond circulaires pour les icones -->
      <i class="fas fa-money-bill-wave fa-2x"></i>
      </div>
-     <span><h2>Économique</h2></span>
+     <h2><span>Économique</span></h2>
      </div>
 
      </div>
@@ -79,7 +82,7 @@
      <div class="icones-fond">
      <i class="fas fa-child fa-2x"></i>
      </div>
-     <span><h2>Familial</h2></span>
+     <h2><span>Familial</span></h2>
      </div> 
      
      </div>
@@ -90,7 +93,7 @@
      <div class="icones-fond">
      <i class="fas fa-heart fa-2x"></i>
      </div>
-     <span><h2>Romantique</h2></span>
+     <h2><span>Romantique</span></h2>
      </div>
      
      </div>
@@ -102,7 +105,7 @@
      <i class="fas fa-dog fa-2x"></i>
      </div>
      
-     <span><h2>Animaux autorisés</h2></span>
+     <h2><span>Animaux autorisés</span></h2>
      </div>   
      
     </div> 
@@ -117,20 +120,21 @@
 
     </header>
 
+<!-- Fin HEADER -->
 
 
 
-
-<div class="combinaison">
+<div class="combinaison"> <!-- Class pour pouvoir combiner la zone hébergement et la zone populaire en flexbox -->
 <div class="Hébergements-zone">
 
- <div class="Hébergements-titre">
-    <h1 id="Hébergements">Hébergements à Marseille</h1>
+<!-- ZONE HEBERGEMENTS -->
+ <div class="Hébergements-titre"><!-- Pour pouvoir déplacer indépendamment le titre dans la zone hébergements -->
+    <h1 id="Hébergements">Hébergements à Marseille</h1> 
  </div>  
 
    <div class="Hébergements-images">  
 
-        <a href="" class="cannebière" >  
+        <a href="" class="cannebière"> <!-- pour créer une carte cliquable -->  
             
         <img src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
         <h3>Auberge de la Cannebière</h3> 
@@ -216,22 +220,25 @@
 
     </div>
 
-      <div class="afficher">
+      <div class="afficher"> <!-- Pour pouvoir déplacer indépendamment le texte dans la zone Hébergement -->
       <h4>Afficher plus</h4>
       </div>  
+
+ <!-- Fin de la ZONE HEBERGEMENTS -->     
 </div>
         
-    
+ 
+<!-- ZONE POPULAIRE -->   
 <div class="populaires-zone">
 
-    <div class="populaires-titre">
+    <div class="populaires-titre"><!-- Pour pouvoir positioner le texte et l'icone dans la zone-->
     <h1>Les plus populaires</h1>
     <span><i class="fas fa-chart-line fa-2x"></i></span>
     </div>    
 
 <div class="populaires-images">
 
-    <a href="" class="soleil-du-matin">   
+    <a href="" class="soleil-du-matin"> <!--Carte cliquable -->  
          
         <img src="Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
          
@@ -275,18 +282,21 @@
         <span><i class="fas fa-star unchecked"></i></span>
 
     </a> 
-         
+    
+    <!-- Fin de la ZONE POPULAIRE -->     
         </div>         
         </div>
         </div>
 
+
+<!-- ZONE ACTIVITES -->
    <h1 id="Activités">Activités à Marseille</h1> 
         
     <div class="Activités-zone">
         
-    <div class="solo">
+    <div class="solo"> <!-- Images qui seront seules dans la zone activités -->
         
-        <a href="" class="lieux">
+        <a href="" class="lieux"> <!--Carte cliquable -->
 
         <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
 
@@ -295,17 +305,17 @@
 
     </div>
 
-    <div class="deux-en-un">
+    <div class="deux-en-un"> <!-- Images qui seront positionnées l'une au dessus de l'autre dans la section activités -->
        
         <a href="" class="lieux">
-        <div class="premier">
+        <div class="premier"> <!-- Pour pouvoir modifier la position des premières images en haut de la colone --> 
 
         <img src="Projet2-Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">  
-
         <h3>Fort de Pomègues</h3>
-        </a>   
+        
         </div>     
-   
+        </a>
+
         <a href="" class="lieux">
         
         <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Friout">
@@ -334,8 +344,9 @@
         <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">   
 
         <h3>Notre-Dame-de-la-Garde</h3>
-        </a>
+        
         </div>
+        </a>
 
         <a href="" class="lieux">
             
@@ -344,9 +355,10 @@
         <h3>Parc Longchamp</h3>
         </a>
 
-    </div>    
     </div>
-        
+ <!--Fin ZONE ACTIVITES -->      
+    </div>
+ 
 <footer>
 
     <div class="A-propos">
