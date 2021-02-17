@@ -193,6 +193,7 @@ color: white;
 /*Position,animation des filtres */
 
 
+/*Info sur le nombre de logement */
 .info
 {   
 	display: flex;
@@ -210,6 +211,7 @@ color: white;
 	border-color:  #F2F2F2;
 	padding: 10px;
 }
+/*Info sur le nombre de logement */
 
 /*Contenue de la zone principale d'affichage de lieux d'hébergements */
 .combinaison
